@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大学生のための 防災行動診断</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="main-title">大学生のための 防災行動診断</h1>
+        
+        <!-- 診断実行エリア -->
+        <div id="quiz-container">
+            <!-- 質問や説明がここに挿入されます -->
+        </div>
+
+        <!-- 共助診断用のボタン (最初は非表示) -->
+        <button id="next-btn" onclick="nextKyojoQuestion()" style="display: none;">次の質問へ</button>
+        <button id="submit-btn" onclick="showFinalResult()" style="display: none;">結果を見る</button>
+
+        <!-- 最終結果表示エリア (最初は非表示) -->
+        <div id="result-container" style="display: none;">
+            <h1>あなたの防災診断結果</h1>
+    
+            <!-- 自助アクション表示エリア -->
+            <div id="jijo-result-area" class="result-section">
+                <!-- JSで挿入 -->
+            </div>
+            
+            <!-- 共助タイプ表示エリア -->
+            <div id="kyojo-result-area" class="result-section">
+                <!-- JSで挿入 -->
+            </div>
+            
+            <button onclick="restartQuiz()">もう一度診断する</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

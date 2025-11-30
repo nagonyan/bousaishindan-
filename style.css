@@ -1,0 +1,171 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans CJK JP", "Yu Gothic", sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 上から表示 */
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* メインタイトル */
+#main-title {
+    color: #005a9c;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* 診断の質問文 */
+.question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* 導入説明文 */
+.intro-text {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* 選択肢ボタン */
+.option {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+    border-color: #007bff;
+}
+
+/* 共助診断で選択中のスタイル */
+.option.selected {
+    background-color: #e6f7ff;
+    border-color: #007bff;
+    font-weight: bold;
+}
+
+/* 共助診断用ボタン */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#submit-btn {
+    background-color: #28a745;
+}
+#submit-btn:hover {
+    background-color: #218838;
+}
+
+
+/* --- 結果ページ専用スタイル --- */
+
+#result-container h1 {
+    font-size: 2rem;
+    color: #d9534f;
+    margin-bottom: 25px;
+}
+
+.result-section {
+    background-color: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.result-section h2 {
+    color: #005a9c;
+    border-bottom: 2px solid #005a9c;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* 共助タイプ名 */
+.result-section h3 { 
+    font-size: 1.8rem;
+    color: #d9534f;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* 共助画像 */
+.result-section img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #eee;
+}
+
+/* 共助スコアリスト */
+#score-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+#score-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+/* ...既存のコードの一番下に追加... */
+
+/* 結果画像のスタイル */
+.result-char-img {
+    display: block;
+    max-width: 80%; /* 画面幅の80%までの大きさに制限 */
+    height: auto;   /* 縦横比を維持 */
+    margin: 20px auto; /* 上下に余白、左右中央揃え */
+    border-radius: 8px; /* 角を少し丸くする */
+}
